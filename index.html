@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Lift Simulator</title>
+	</head>
+	<body>
+		<canvas id="cnv" width="400" height="400" style="border:1px solid black;"></canvas> <!-- You can change the dimensions of the canvas -->
+
+		<!-- Add as many floors as you want! MAKE SURE THAT "goto()" IS NOT BELOW ZERO AND CHANGE THE VARIABLE "max_floor" IN main.js! -->
+		<button type="button" onclick="goto(1)">G</button> <!-- You can customize your floor numberings-->
+		<button type="button" onclick="goto(2)">1</button> 
+		<button type="button" onclick="goto(3)">2</button> 
+		<button type="button" onclick="goto(4)">3</button> 
+		<button type="button" onclick="goto(5)">4</button> 
+
+		<!-- The Indicator-->
+		<h1 id="indicator"></h1>
+
+		<!-- This is the floor selector. you can hide it. BUT DO NOT REMOVE IT AND DO NOT REMOVE THE NUMBER POSITION! You can change it-->
+		<h5 id="ind">1</h5>
+
+		<script src="main.js"></script>
+	</body>
+</html>
+
